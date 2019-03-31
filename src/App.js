@@ -24,14 +24,16 @@ class App extends Component {
 
     addTodoHandler(e) {
         if (document.querySelector('.input').value !== '') {
+            event.preventDefault();
+
             let newItem = {
                 text: document.querySelector('.input').value,
                 id: this.state.id,
                 done: false
             };
             this.state.items.push(newItem);          
+            this.setState({text: '', index: this.state.id += 1, items: this.state.items});
         }
-        this.setState({text: '', index: this.state.id += 1, items: this.state.items});
     }
 
     removeItem(index) {
