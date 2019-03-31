@@ -7,12 +7,14 @@ class Input extends React.Component {
     
     render() {
         return (
-            
+            <form onSubmit = {this.props.addTodoHandler}>
             <input className='input' type='text' 
             placeholder = 'todo...' 
             value = {this.props.text}
             onChange = {this.props.changeTextState}
-            onKeyPress = {this.props.addTodoHandler}/>        
+            />
+            <button className='add'>Add</button>        
+            </form>
         )
     }
 

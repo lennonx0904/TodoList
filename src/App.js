@@ -23,17 +23,15 @@ class App extends Component {
     }
 
     addTodoHandler(e) {
-        if (e.key === 'Enter') {
-            if (e.currentTarget.value !== '') {
-                let newItem = {
-                    text: e.currentTarget.value,
-                    id: this.state.id,
-                    done: false
-                };
-                this.state.items.push(newItem);          
-            }
-            this.setState({text: '', index: this.state.id += 1, items: this.state.items});
+        if (document.querySelector('.input').value !== '') {
+            let newItem = {
+                text: document.querySelector('.input').value,
+                id: this.state.id,
+                done: false
+            };
+            this.state.items.push(newItem);          
         }
+        this.setState({text: '', index: this.state.id += 1, items: this.state.items});
     }
 
     removeItem(index) {
