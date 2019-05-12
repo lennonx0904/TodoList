@@ -1,83 +1,98 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-#root{
-    display: flex;
-    text-align: center;
-    justify-content: center;
+#root {
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 
-.hidden{
-    visibility: hidden;
+.hidden {
+  visibility: hidden;
 }
 
-.done{
-    text-decoration: line-through;
+.done {
+  text-decoration: line-through;
 }
 
-form{
-    display: flex;
-    align-items: center;justify-content: space-between;
+form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.input{
-    width: 480px;height: 42px;
-    font-size: 24px;padding: 16px;
-    margin-bottom: 10px;
-    border: 1px solid #979797;
+.input {
+  width: 480px;
+  height: 42px;
+  font-size: 24px;
+  padding: 16px;
+  margin-bottom: 10px;
+  border: 1px solid #979797;
 }
 .add {
-    height: 42px;width: 48px;
-    background-color: rgba(136, 196, 154, .2);
-    margin-bottom: 10px;margin-left: 12px;
-    font-size: 16px;
+  height: 42px;
+  width: 48px;
+  background-color: rgba(136, 196, 154, 0.2);
+  margin-bottom: 10px;
+  margin-left: 12px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.list{
-    font-size: 24px;text-align: left;
-    position: relative;display: flex;
-    border: 1px solid #979797;
-    padding: 10px;display: flex;
-}
-
-.circle{
-    height: 28px;width: 28px;
-    border: 1px solid #979797;
-    border-radius: 50%;
-    position: absolute;left: 7px;top:7px;
-    margin-right: 20px;
-}
-
-.check{
-    color: rgb(136, 196, 154);
-}
-.todo{
-    margin: 0 auto 0 20px;font-size: 18px;
+.list {
+  font-size: 24px;
+  text-align: left;
+  position: relative;
+  display: flex;
+  border: 1px solid #979797;
+  padding: 10px;
+  display: flex;
 }
 
-.buttons{
-    display: flex;justify-content: space-around;
-    margin-top: 12px;
+.circle {
+  height: 28px;
+  width: 28px;
+  border: 1px solid #979797;
+  border-radius: 50%;
+  position: absolute;
+  left: 7px;
+  top: 7px;
+  margin-right: 20px;
 }
 
-.buttons>div{
-    background-color: rgba(136, 196, 154, .2);
-    padding: 12px 20px;
-    font-size: 16px;
-    border: 1px solid #979797;
-    width: 33.33%;
+.check {
+  color: rgb(136, 196, 154);
+}
+.todo {
+  margin: 0 auto 0 20px;
+  font-size: 18px;
 }
 
-a{
-    text-decoration: none;
-    color:black;
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 12px;
 }
 
+.buttons > div {
+  background-color: rgba(136, 196, 154, 0.2);
+  padding: 12px 20px;
+  font-size: 16px;
+  border: 1px solid #979797;
+  width: 33.33%;
+}
 
-@media (max-width: 600px){
-    #root{
-        width: 95%;
-    }
-    .input{
-        width: 100%;
-    }
+a {
+  text-decoration: none;
+  color: black;
+}
+
+@media (max-width: 600px) {
+  #root {
+    width: 95%;
+  }
+  .input {
+    width: 100%;
+  }
 }
